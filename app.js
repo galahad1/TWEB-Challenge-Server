@@ -12,6 +12,8 @@ const cors = require('cors');
 const routes = require('./routes/index');
 const users = require('./routes/user');
 const animals = require('./routes/animal')
+const chance = require('./routes/chance')
+
 
 const app = express();
 
@@ -37,6 +39,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/animals', animals);
+app.use('/chance', chance);
+
 
 
 
