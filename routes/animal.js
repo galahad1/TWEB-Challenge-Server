@@ -20,6 +20,7 @@ router.post('/', (req, res) => {
   animal.valide = true;
 
 
+  res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify(animal));
 
 
